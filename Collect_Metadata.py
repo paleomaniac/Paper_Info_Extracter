@@ -129,4 +129,4 @@ def combine_article_info(urls):
 # Example usage:
 urls = ['https://pubmed.ncbi.nlm.nih.gov/32269234/', 'https://pubmed.ncbi.nlm.nih.gov/34370580/']
 df = combine_article_info(urls)
-df.to_tsv("Ellie_Paper_Information.tsv", index=False)
+df.to_csv("Ellie_Paper_Information.csv", index=False)
