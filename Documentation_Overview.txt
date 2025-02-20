@@ -1,0 +1,57 @@
+Functions
+extract_affiliations_and_numbers(url)
+Extracts affiliations and their corresponding numbers from a PubMed article.
+
+Args:
+
+url (str): The URL of the PubMed article.
+
+Returns:
+
+dict: A dictionary with the number as the key and the affiliation as the value.
+
+extract_authors_and_numbers(url)
+Extracts authors and their corresponding affiliation numbers from a PubMed article.
+
+Args:
+
+url (str): The URL of the PubMed article.
+
+Returns:
+
+dict: A dictionary with the author's name as the key and a list of numbers as the value.
+
+extract_article_info(url)
+Extracts the publication year, PMID, and title from a PubMed article.
+
+Args:
+
+url (str): The URL of the PubMed article.
+
+Returns:
+
+tuple: A tuple containing the year, PMID, and title.
+
+combine_article_info(urls)
+Combines information from multiple PubMed articles into a single DataFrame.
+
+Args:
+
+urls (list): A list of URLs of the PubMed articles.
+
+Returns:
+
+DataFrame: A DataFrame containing combined information from the articles.
+
+Usage
+Create a list of PubMed article URLs.
+
+Call the combine_article_info(urls) function with the list of URLs.
+
+Save the resulting DataFrame to a CSV file.
+
+Contributing
+If you'd like to contribute, please fork the repository and use a feature branch. Pull requests are welcome.
+
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
